@@ -1,6 +1,6 @@
-const baseUrl = process.env.REACT_APP_URL || '';
+export const APP_URL = process.env.REACT_APP_URL || '';
 
-export const API_URL = `${baseUrl}/api`;
+export const API_URL = `${APP_URL}/api`;
 
 export const getAuthUrl = (string: string) => `/auth${string}`;
 export const getUsersUrl = (string: string) => `/users${string}`;

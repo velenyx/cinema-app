@@ -1,4 +1,5 @@
-import { Layout } from '~/components/layout/Layout';
+import { Heading } from '~/components/ui';
+import { Meta } from '~/utils/Meta/Meta';
 
 export interface HomeScreenProps {
   test?: string;
@@ -6,8 +7,11 @@ export interface HomeScreenProps {
 
 export const HomeScreen: React.FC<HomeScreenProps> = () => {
   return (
-    <Layout>
-      <h1>Home Screen</h1>
-    </Layout>
+    <Meta
+      description='Watch MovieApp movies and TV shows online or stream right to your browser.'
+      title='Watch movies online'
+    >
+      <Heading className='mb-8 text-xl text-gray-500' title='Watch movies online' />
+    </Meta>
   );
 };
