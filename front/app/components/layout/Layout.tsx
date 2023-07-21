@@ -1,4 +1,4 @@
-import { Navigation } from './Navigation/Navigation';
+import { Navigation } from './Navigation';
 import { Sidebar } from './Sidebar/Sidebar';
 
 interface LayoutProps {
